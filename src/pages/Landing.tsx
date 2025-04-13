@@ -57,7 +57,7 @@ const Landing = () => {
                   <img
                     src={constellation}
                     alt="Constellation"
-                    className="absolute h-100 w-300" 
+                    className="absolute h-3/6 w-300" 
                         style={{ top: '55%', left: '8%' }} 
                   />
                 </div>
