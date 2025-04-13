@@ -31,6 +31,15 @@ const about = () => {
             Stellarship empowers students with the information and tools they need to confidently pursue
             financial aid opportunities and achieve their academic goals..</p>
         </div>
+
+        <div className='w-1/2 h-1/2  rounded-lg'>
+
+        
+          
+          
+
+
+        </div>
       </div>
      
 
