@@ -29,8 +29,16 @@ const Landing = () => {
                         typeSpeed={70}
                         deleteSpeed={50}
                         delaySpeed={1000} />
+          </div>
+
+                    {/* UFO Image */}
+                    <img 
+            src={ufo} 
+            alt="UFO" 
+            className="absolute animate-ufo w-40" 
+            style={{ top: '10%', left: '0%' }} 
+          />
                 </div>
-            </div>
             <Chatbot />
         </div>
     )
