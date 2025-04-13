@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
+
 export const Navbar = () => {
   return (
     <nav style={{ backgroundColor: 'var(--primary-color)', padding: '2rem',  }}>

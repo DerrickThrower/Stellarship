@@ -1,9 +1,11 @@
 import React from 'react'
+import { Chatbot } from '../components/chatbot'
 
 const Projects = () => {
   return (
     <div>
-      Projects Page
+      <h1>Projects Page</h1>
+      <Chatbot />
     </div>
   )
 }
