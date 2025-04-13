@@ -6,8 +6,7 @@ from pymongo.server_api import ServerApi
 from pymongo import ReplaceOne
 
 # replace <db_password> with your actual password
-uri = "mongodb+srv://harrit4:UnoNbBH8kZRD06So@cluster0.dtapwpl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-
+uri = "mongodb+srv://harrit4:puSKIogoUl9CZqSY@cluster0.dtapwpl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(uri, server_api=ServerApi('1'))
 
 db = client.scholarships
