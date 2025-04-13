@@ -2,7 +2,7 @@ import '../App.css'
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
-
+import ufo from '../assets/ufo.png';
 
 const Landing = () => {
     return (
@@ -19,7 +19,7 @@ const Landing = () => {
 
           <div className="font-serif">
                     <Typewriter
-                        words={['Welcome To Stellarship']}
+                        words={['Welcome To Stellarship!!!']}
                         loop={0}
                         cursor
                         cursorStyle='|'
@@ -27,6 +27,14 @@ const Landing = () => {
                         deleteSpeed={50}
                         delaySpeed={1000} />
           </div>
+
+                    {/* UFO Image */}
+                    <img 
+            src={ufo} 
+            alt="UFO" 
+            className="absolute animate-ufo w-40" 
+            style={{ top: '10%', left: '0%' }} 
+          />
         </div>
     )
 }

@@ -20,4 +20,68 @@
   --secondary-color: #1e3a8a;  /* indigo-950 */
   --tertiary-color: #1e3a8a;
 }
+.animate-ufo {
+    animation: ufo-move 10s infinite linear; /* Adjust duration as needed */
+}
+@keyframes ufo-move {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
+  12.5% {
+    transform: translateX(100vw) translateY(-10vh);
+  }
+  25% {
+    transform: translateX(20vw) translateY(-10vh);
+  }
+  50% {
+    transform: translateX(40vw) translateY(10vh);
+  }
+  75% {
+    transform: translateX(60vw) translateY(-10vh);
+  }
+  100% {
+    transform: translateX(80vw) translateY(0);
+  }
+}
+
+.animate-ufo {
+  animation: ufo-move 5s infinite linear;
+}
+
+/* Creates a radial gradient transitioning from the primary color at the center to the secondary color at the edges */
+.bg-radial {
+  background: radial-gradient(var(--primary-color), var(--secondary-color));
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-stone-50 {
+  color: #fafaf9;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
