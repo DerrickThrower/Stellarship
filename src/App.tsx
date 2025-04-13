@@ -7,8 +7,8 @@ import About from './pages/RealAbout'
 function App() {
   return (
     <Router>
+      <Navbar/>
       <div>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/scholarships" element={<Scholarships />} />

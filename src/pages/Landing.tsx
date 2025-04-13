@@ -63,22 +63,28 @@ const Landing = () => {
           src={constellation}
           alt="Constellation"
           className="absolute h-100 w-300"
-          style={{ top: '55%', left: '8%' }}
+          style={{ top: '40%', left: '8%' }}
         />
         {/* Buttons on the constellation */}
         <button
-          className="absolute bg-transparent text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
-          style={{ top: '50%', left: '40%' }}
-          onClick={() => navigate('/scholarships')}
+          className="font-serif absolute bg-transparent text-white border-yellow px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '70%', left: '10%' }}
         >
-        P1
+        Landing Page
         </button>
         <button
-          className="absolute bg-transparent text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
-          style={{ top: '50%', left: '60%' }}
+          className="font-serif absolute bg-transparent text-white border-yellow px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '90%', left: '35%' }}
+          onClick={() => navigate('/scholarships')}
+        >
+        Explore Scholarships
+        </button>
+        <button
+          className="font-serif absolute bg-transparent text-white border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '67%', left: '78%' }}
           onClick={() => navigate('/about')}
         >
-        P2
+        About Us
         </button>
       </div>
 

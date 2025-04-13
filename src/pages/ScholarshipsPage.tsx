@@ -1,4 +1,5 @@
-import React from 'react'
+
+
 import ScholarshipCard from '../components/scholarshipcard'
 import stars from '../assets/stars.png'
  
@@ -31,7 +32,7 @@ const Scholarships = () => {
 
       
     </div>
-  )
+      )
 }
 
 export default Scholarships 
