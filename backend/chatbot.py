@@ -114,4 +114,4 @@ If asked about unrelated topics, gently redirect the conversation back to schola
 
 if __name__ == "__main__":
     logging.info("Starting Flask server...")
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=True, host='0.0.0.0', port=5002)

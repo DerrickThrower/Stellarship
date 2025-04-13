@@ -42,7 +42,7 @@ export function Chatbot() {
     setIsLoading(true)
 
     try {
-      const res = await fetch('http://localhost:5001/chat', {
+      const res = await fetch('http://localhost:5002/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,6 +1,7 @@
 // Example ScholarshipCard component with data fetching
 import { useState, useEffect } from 'react';
 
+
 interface Scholarship {
     id: string;
     title: string;
@@ -9,6 +10,7 @@ interface Scholarship {
 }
 
 const ScholarshipCard = () => {
+
     const [scholarships, setScholarships] = useState<Scholarship[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -34,11 +36,11 @@ const ScholarshipCard = () => {
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
-
+    
     return (
         <div className='bg-black-10'>
             {scholarships.map(scholarship => (
-                <div key={scholarship.id} className='bg-blue-950 shadow-lg text-white p-4 rounded-lg p-10 w-200'>
+                <div key={scholarship.id} className='bg-blue-950 shadow-lg text-white rounded-lg p-10 w-200'>
                     <h2 className='text-lg font-bold'>{scholarship.title}</h2>
                     <p className='text-white'>Amount: {scholarship.amount}</p>
                     <p className='text-white'>Deadline: {scholarship.deadline}</p>
