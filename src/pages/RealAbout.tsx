@@ -13,10 +13,19 @@ const about = () => {
 
       <h1 className=' pt-10 text-4xl font-bold text-white text-center '>About Us</h1>
      
-      <div className='flex justify-center items-center pt-10 text-white'>
-        <div className='w-1/2 h-1/2 bg-blue-950 rounded-lg'>
+      <div className='flex justify-center items-center pt-10 text-white px-10'>
+        <div className='w-1/2 h-1/2  rounded-lg'>
           <h2 className='text-2xl font-bold'>Our Mission</h2>
           <p className='text-xl'>We are a team of students who are passionate about helping students find scholarships.</p>
+        </div>
+
+        <div className='w-1/2 h-1/2  rounded-lg'>
+
+        
+          
+          
+
+
         </div>
       </div>
      
