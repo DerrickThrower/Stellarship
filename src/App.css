@@ -83,3 +83,11 @@
   position: relative;
 }
 
+.constellation-image {
+  position: absolute;
+  height: 20vh; /* Adjust height relative to viewport */
+  width: auto; /* Maintain aspect ratio */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+}
