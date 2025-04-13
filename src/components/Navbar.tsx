@@ -4,7 +4,11 @@ import '../App.css'
 
 export const Navbar = () => {
   return (
-    <nav style={{ backgroundColor: 'var(--primary-color)', padding: '2rem',  }}>
+    <nav style={{ 
+      background: '#1e1b4b',
+      padding: '2rem',
+      borderRadius: '5x',
+    }}>
       <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none', padding: 0, margin: 0, color: 'white' }}>
         <li>
           <Link to="/" style={{ padding: '0.5rem 1rem', color: 'white', textDecoration: 'none' }}>Landing</Link>
