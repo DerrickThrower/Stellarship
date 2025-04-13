@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+
+import './App.css'
+import { Typewriter } from 'react-simple-typewriter'
+
+
+
+function App() {
+
+  return <div></div>
+=======
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
@@ -17,6 +28,7 @@ function App() {
       </div>
     </Router>
   )
+>>>>>>> fe462b5e9f4aec77a53b0d1ee84d7b32b0720c32
 }
 
 export default App
