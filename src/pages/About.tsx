@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
@@ -11,4 +11,4 @@ const About: React.FC = () => {
   )
 }
 
-export default About 
+ 
