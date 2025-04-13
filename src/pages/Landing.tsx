@@ -3,6 +3,7 @@ import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
 import ufo from '../assets/ufo.png';
+import constellation from '../assets/constellation.png';
 import { Chatbot } from '../components/chatbot'
 
 
@@ -46,11 +47,19 @@ const Landing = () => {
 
                     {/* UFO Image */}
                     <img 
-            src={ufo} 
-            alt="UFO" 
-            className="absolute animate-ufo w-40" 
-            style={{ top: '10%', left: '0%' }} 
-          />
+                      src={ufo} 
+                      alt="UFO" 
+                      className="absolute animate-ufo w-40" 
+                      style={{ top: '10%', left: '0%' }} 
+                    />
+                </div>
+                <div>
+                  <img
+                    src={constellation}
+                    alt="Constellation"
+                    className="absolute h-100 w-300" 
+                        style={{ top: '55%', left: '8%' }} 
+                  />
                 </div>
             <Chatbot />
         </div>
