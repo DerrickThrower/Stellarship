@@ -4,6 +4,8 @@ import pprint
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from pymongo import ReplaceOne
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # replace <db_password> with your actual password
 uri = "mongodb+srv://harrit4:puSKIogoUl9CZqSY@cluster0.dtapwpl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -49,3 +51,20 @@ for i in scholarships.find():
     pprint.pprint(i)
 
 driver.quit()
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/api/scholarships', methods=['GET'])
+def get_scholarships():
+    scholarships = list(db.titlesandamounts.find())
+    return jsonify([{
+        'id': str(sch['_id']),
+        'title': sch['title'],
+        'amount': sch['amount'],
+        'deadline': sch['deadline']
+    } for sch in scholarships])
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5001)
+
