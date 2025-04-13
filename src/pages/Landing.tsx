@@ -2,22 +2,24 @@ import '../App.css'
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
+import { Chatbot } from '../components/chatbot'
 
 
 const Landing = () => {
     return (
-        <div className="bg-radial from-slate-950 to-indigo-950 h-screen flex items-center text-3xl text-stone-50 justify-center w-full relative">
-          <div
-                className="absolute inset-0 animate-twinkle  h-full"
-                style={{
-                    backgroundImage: `url(${stars})`, // Use your stars image
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    opacity: 0.5, // Adjust transparency of the stars
-                }}
-            ></div>
+        <div>
+            <div className="bg-radial from-slate-950 to-indigo-950 h-screen flex items-center text-3xl text-stone-50 justify-center w-full relative">
+                <div
+                    className="absolute inset-0 animate-twinkle  h-full"
+                    style={{
+                        backgroundImage: `url(${stars})`, // Use your stars image
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        opacity: 0.5, // Adjust transparency of the stars
+                    }}
+                ></div>
 
-          <div className="font-serif">
+                <div className="font-serif">
                     <Typewriter
                         words={['Welcome To Stellarship']}
                         loop={0}
@@ -26,7 +28,9 @@ const Landing = () => {
                         typeSpeed={70}
                         deleteSpeed={50}
                         delaySpeed={1000} />
-          </div>
+                </div>
+            </div>
+            <Chatbot />
         </div>
     )
 }
