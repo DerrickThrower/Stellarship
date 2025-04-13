@@ -25,28 +25,25 @@
 }
 @keyframes ufo-move {
   0% {
-    transform: translateX(0) translateY(0);
-  }
-
-  12.5% {
-    transform: translateX(100vw) translateY(-10vh);
+    transform: translateX(200px) translateY(300px);
   }
   25% {
-    transform: translateX(20vw) translateY(-10vh);
+    transform: translateX(500px) translateY(450px);
   }
   50% {
-    transform: translateX(40vw) translateY(10vh);
+    transform: translateX(1100px) translateY(350px);
   }
   75% {
-    transform: translateX(60vw) translateY(-10vh);
+    transform: translateX(500px) translateY(450px);
   }
   100% {
-    transform: translateX(80vw) translateY(0);
+    transform: translateX(200px) translateY(300px);
+
   }
 }
 
 .animate-ufo {
-  animation: ufo-move 5s infinite linear;
+  animation: ufo-move 8s infinite ease-in-out; 
 }
 
 /* Creates a radial gradient transitioning from the primary color at the center to the secondary color at the edges */
