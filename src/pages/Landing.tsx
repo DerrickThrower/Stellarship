@@ -3,6 +3,7 @@ import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
 
+
 const Landing = () => {
     return (
         <div className="bg-radial from-slate-950 to-indigo-950 h-screen flex items-center text-3xl text-stone-50 justify-center w-full relative">

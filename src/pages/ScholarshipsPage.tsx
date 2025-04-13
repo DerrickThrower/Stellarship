@@ -1,11 +1,14 @@
 import React from 'react'
 
-const Contact = () => {
+const Scholarships = () => {
   return (
-    <div>
-      Contact Page
+    <div className=''>
+      <div className='text-center '>
+        <h1>Scholarships</h1>
+        <p className=''>We have a list of scholarships for you to apply to</p>
+      </div>
     </div>
   )
 }
 
-export default Contact 
+export default Scholarships 

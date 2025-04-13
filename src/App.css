@@ -15,4 +15,9 @@
   .animate-twinkle {
     animation: twinkle 3s infinite ease-in-out;
   }
+:root {
+  --primary-color: #0f172a;  /* slate-950 */
+  --secondary-color: #1e3a8a;  /* indigo-950 */
+  --tertiary-color: #1e3a8a;
+}
 
