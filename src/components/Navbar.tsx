@@ -5,7 +5,7 @@ import '../App.css'
 export const Navbar = () => {
   return (
     <nav style={{ 
-      background: '#1e1b4b',
+      background: 'linear-gradient(to right, #1e1b4b, #1e1b4b)',
       padding: '2rem',
       borderRadius: '5x',
     }}>

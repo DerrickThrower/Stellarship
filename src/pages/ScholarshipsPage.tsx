@@ -1,15 +1,38 @@
 import React from 'react'
 import { Chatbot } from '../components/chatbot'
-
+import ScholarshipCard from '../components/scholarshipcard'
+import stars from '../assets/stars.png'
+ 
+  //loop through the mongo db and for each scholarship make a card and display it on the page
+  //make the cards clickable and when clicked it should redirect to the scholarship page
+  
 const Scholarships = () => {
   return (
-    <div className=''>
-      <div className='text-center '>
-        <h1>Scholarships</h1>
-        <p className=''>We have a list of scholarships for you to apply to</p>
+    <div className="min-h-screen bg-radial from-slate-950 to-indigo-950 relative">
+      <div
+        className="absolute inset-0 animate-twinkle h-full"
+        style={{
+          backgroundImage: `url(${stars})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.5,
+        }}
+      ></div>
+      
+      <div className="relative z-10 p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+          <ScholarshipCard />
+        </div>
       </div>
-      <Chatbot />
 
+      <Chatbot />
     </div>
   )
 }

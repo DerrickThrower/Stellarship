@@ -2,12 +2,9 @@ import '../App.css'
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
-<<<<<<< HEAD
 import ufo from '../assets/ufo.png';
-=======
 import { Chatbot } from '../components/chatbot'
 
->>>>>>> 6cef5890f3cc4d61bfbe31d80adba34c0fdc46a9
 
 const Landing = () => {
     return (
@@ -32,21 +29,9 @@ const Landing = () => {
                         typeSpeed={70}
                         deleteSpeed={50}
                         delaySpeed={1000} />
-<<<<<<< HEAD
-          </div>
-
-                    {/* UFO Image */}
-                    <img 
-            src={ufo} 
-            alt="UFO" 
-            className="absolute animate-ufo w-40" 
-            style={{ top: '10%', left: '0%' }} 
-          />
-=======
                 </div>
             </div>
             <Chatbot />
->>>>>>> 6cef5890f3cc4d61bfbe31d80adba34c0fdc46a9
         </div>
     )
 }
