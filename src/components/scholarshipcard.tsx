@@ -1,6 +1,6 @@
 // Example ScholarshipCard component with data fetching
 import { useState, useEffect } from 'react';
-
+const url = 'https://jefferyisaiahdavidmemorialfoundation.org/scholarships';
 
 interface Scholarship {
     id: string;
@@ -44,7 +44,7 @@ const ScholarshipCard = () => {
                     <h2 className='text-lg font-bold'>{scholarship.title}</h2>
                     <p className='text-white'>Amount: {scholarship.amount}</p>
                     <p className='text-white'>Deadline: {scholarship.deadline}</p>
-                    <button className='bg-blue-500 text-white px-4 py-2 rounded-md'>Apply</button>
+                    <button className='bg-blue-500 text-white px-4 py-2 rounded-md' onClick={() => window.open(url, '_blank')}  >Apply</button>
                 </div>
             ))}
         </div>
