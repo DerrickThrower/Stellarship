@@ -1,5 +1,4 @@
 import React from 'react'
-import { Chatbot } from '../components/chatbot'
 import ScholarshipCard from '../components/scholarshipcard'
 import stars from '../assets/stars.png'
  
@@ -9,6 +8,7 @@ import stars from '../assets/stars.png'
 const Scholarships = () => {
   return (
     <div className="min-h-screen bg-radial from-slate-950 to-indigo-950 relative">
+      
       <div
         className="absolute inset-0 animate-twinkle h-full"
         style={{
@@ -18,6 +18,7 @@ const Scholarships = () => {
           opacity: 0.5,
         }}
       ></div>
+      
       
       <div className="relative z-10 p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -32,7 +33,9 @@ const Scholarships = () => {
         </div>
       </div>
 
-      <Chatbot />
+     
+
+      
     </div>
   )
 }

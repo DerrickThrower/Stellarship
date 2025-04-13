@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import Landing from './pages/Landing'
 import Scholarships from './pages/ScholarshipsPage'
-import Unknown from './pages/uknown'
+import About from './pages/RealAbout'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/scholarships" element={<Scholarships />} />
-          <Route path="/unknown" element={<Unknown />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>
