@@ -47,6 +47,9 @@ const Landing = () => {
             delaySpeed={1000}
           />
         </h1>
+        <h1 className='text-xl'>
+          Exploring College Finances
+        </h1>
       </div>
 
       {/* UFO Image */}

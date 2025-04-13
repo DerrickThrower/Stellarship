@@ -2,6 +2,7 @@
 
 import ScholarshipCard from '../components/scholarshipcard'
 import stars from '../assets/stars.png'
+import alien from '../assets/alien.png'
  
   //loop through the mongo db and for each scholarship make a card and display it on the page
   //make the cards clickable and when clicked it should redirect to the scholarship page
@@ -29,7 +30,12 @@ const Scholarships = () => {
       </div>
 
      
-
+        <img
+        src={alien}
+          alt="alien"
+          className="absolute"
+          style={{ top: '0%', left: '60%' }}
+        />
       
     </div>
       )
