@@ -1,5 +1,4 @@
 import '../App.css';
-import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import stars from '../assets/stars.png';
 import ufo from '../assets/ufo.png';

@@ -1,9 +1,5 @@
-import React from 'react'
-import { Navbar } from '../components/Navbar'
-
 import { Chatbot } from '../components/chatbot'
 import stars from '../assets/stars.png'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 const about = () => {
 
   return (
