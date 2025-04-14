@@ -1,9 +1,15 @@
 import { Chatbot } from '../components/chatbot'
 import stars from '../assets/stars.png'
+import constellation from '../assets/constellation.png'
+import { useNavigate } from 'react-router-dom';
+
 const about = () => {
+  const navigate = useNavigate();
 
   return (
+    
     <div className='font-serif min-h-screen bg-radial from-slate-950 to-indigo-950 relative'>
+      
       <div
         className="absolute inset-0 animate-twinkle h-full"
         style={{
@@ -27,16 +33,39 @@ const about = () => {
         </div>
 
         <div className='w-1/2 h-1/2  rounded-lg'>
-
-        
-          
-          
-
-
         </div>
       </div>
      
-
+      <div>
+        <img
+          src={constellation}
+          alt="Constellation"
+          className="absolute h-100 w-300"
+          style={{ top: '40%', left: '8%' }}
+        />
+        {/* Buttons on the constellation */}
+        <button
+          className="font-serif absolute bg-transparent text-white border-yellow px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '70%', left: '10%' }}
+          onClick={() => navigate('/')}
+        >
+        Landing Page
+        </button>
+        <button
+          className="font-serif absolute bg-transparent text-white border-yellow px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '90%', left: '35%' }}
+          onClick={() => navigate('/scholarships')}
+        >
+        Explore Scholarships
+        </button>
+        <button
+          className="font-serif absolute bg-transparent text-white border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
+          style={{ top: '67%', left: '78%' }}
+          onClick={() => navigate('/about')}
+        >
+        About Us
+        </button>
+      </div>
 
 
 

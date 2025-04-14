@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Navbar } from './components/Navbar'
 import Landing from './pages/Landing'
 import Scholarships from './pages/ScholarshipsPage'
 import About from './pages/RealAbout'
@@ -7,7 +6,6 @@ import About from './pages/RealAbout'
 function App() {
   return (
     <Router>
-      <Navbar/>
       <div>
         <Routes>
           <Route path="/" element={<Landing />} />

@@ -71,6 +71,7 @@ const Landing = () => {
         <button
           className="font-serif absolute bg-transparent text-white border-yellow px-4 py-2 rounded hover:bg-white hover:text-black transition"
           style={{ top: '70%', left: '10%' }}
+          onClick={() => navigate('/')}
         >
         Landing Page
         </button>
